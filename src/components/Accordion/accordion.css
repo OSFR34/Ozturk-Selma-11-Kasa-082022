@@ -1,0 +1,51 @@
+.accordion-item{
+    border:none;
+    margin-bottom:31px;
+}
+.accordion-button{
+    background-color:#ff6060;
+    border-radius:5px;
+    color:white;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: none!important;
+    font-size:24px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+.acordion-title-text{
+    /* flex-grow:1 dediğimizde acoordionun başlığındaki yazı en sona kadar genişler. */
+    flex-grow: 1;
+}
+
+.accordion-button.collapsed::after {
+    width:25px;
+    height: 25px;
+    background: url('../../images/arrowdown.png');
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+.accordion-button:not(.collapsed)::after {
+    /* burada da aynı ok resmi kullanılıyor. Ancak bootstrap accordiona tıklandığından oku 180 derece rotate yapar. */
+    background: url('../../images/arrowdown.png');
+    background-size:contain;
+    background-repeat: no-repeat;
+  
+  }
+/*  accordion collapsed olmadığında arka plan rengi ve text rengi değişmesin. */
+/* bootstrap'ta accordiona tıklandığında rengi değiştiği için rengin değişmemsi için rengini belirtiyoruz. */
+.accordion-button:not(.collapsed) {
+    background-color: #ff6060;
+    color:white;
+}
+/*  Bunlar da bootstrap in otomatik ayarlarını değiştirmek için  */
+.accordion-body{
+    min-height:146px;
+    padding:0;
+    padding:36px 27px 19px 18px;
+    background-color: #f6f6f6;
+    border-radius: 5px;
+    font-size:20px;
+    color:#ff6060;
+}

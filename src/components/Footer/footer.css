@@ -1,0 +1,31 @@
+.footer{
+    background-color: black;
+    color:white;
+    height: 209px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.footer-logo{
+    margin-top:60px;
+}
+
+.footer svg{
+    right:75.14%;
+}
+.footer-text{
+    margin-top:40px;
+    font-size:24px;
+    font-weight: 500;
+}
+
+@media (max-width:768px){
+    .footer-logo{
+        margin-top:20px;
+    }
+    .footer-text{
+        font-size:12px;
+        margin-top:20px;
+    }
+}
