@@ -22,7 +22,7 @@ class Equipments extends Component {
       <div className='col-12 col-lg-6 equipments-area'>
              <div className='equipments-title' onClick={this.changeEquipmentsState}>
                 <div className='equipments-text'>
-                    Equipments
+                    Equipements
                 </div>
                 <div>
                     {

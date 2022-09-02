@@ -8,8 +8,8 @@ class Slider extends Component {
         // destructing prop method react
         const {cardinfo} = this.props;
         return (
-            // classNameName = container seçince logo ile aynı hizaya geliyor. bu yüzden container bootstrap classNameını kullandık.
-            // classNameName sadece css ayarlamak için kullanılır.
+            // className= container seçince logo ile aynı hizaya geliyor. bu yüzden container bootstrap classNameını kullandık.
+            // className sadece css ayarlamak için kullanılır.
             <div className='container my-4'>
                 {/* Bootstrap web adresinden carousel kodlarını kopyalayıp buraya yapıştırıyoruz. */}
                 <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="carousel">

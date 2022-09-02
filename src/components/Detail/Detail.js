@@ -17,7 +17,7 @@ function Detail() {
   return (
     <div>
         <Header/>
-          {/* map metodu javscript objeleri için iterasyon yapmayı sağlar. Her bir iterasyon öğesine card ismini verdik. */}
+          {/* map metodu javascript objeleri için iterasyon yapmayı sağlar. Her bir iterasyon öğesine card ismini verdik. */}
           {   
             ListCards.map((card,i) => {
               if(card.id === parameters.lodgingid){
