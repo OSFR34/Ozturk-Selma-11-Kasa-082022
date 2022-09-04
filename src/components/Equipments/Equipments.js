@@ -12,7 +12,7 @@ class Equipments extends Component {
   }
   changeEquipmentsState = () => {
     this.setState({
-      // si equipmentsOn n'est pas false alors inverser son résultat booléen.(! not)
+      // si equipmentsOn n'est pas false alors inverser son résultat booléen.
       equipmentsOn:!this.state.equipmentsOn
     })
   }
@@ -27,9 +27,7 @@ class Equipments extends Component {
                 </div>
                 <div>
                     {
-                      //  ? ===true ise demektir.
-                      // if(this.state.equipmentsOn === true){
-                      // } soru işareti (?) kısa yazılmasıdır.
+                 
                         this.state.equipmentsOn ? <img src={arrowdown} className="img-fluid arrow-img" /> : <img src={arrowup} className="img-fluid arrow-img" />
                     }
                 </div>

@@ -4,15 +4,14 @@ import './accordion.css'
 class Accordion extends Component {
   render() {
     return (
-      // container bootstrap özelliğidir. my-5 de bootstrap özelliğidir.
-      // container: sayfanın sağ ve sol tarafından otomatik olarak margin verir. Ama hepsi eşit margin olur. 
-      // my-5 : my-1 den my-5'e kadar verilebilir. 1 en az margin ve 5'de en çok margin demektir. my: Margin-bot ve aynı anda margin-bottom demektir. 
+      // bootstrap =container: gère automatiquement les marges à droite et à gauches de façon équitablen. 
+      // my-5 : gère la marge des ordonnées (haut bas)- régalage de my-1 à my-5.my-1 est la valeur la plus petite et my-5 est la plus grande. 
       <div className='container my-5'>
-        {/* Kolon oluşturmak için satır açmanız gerekir. O yüzden row kullandık. */}
+        {/* Pour créer des colones il faut d'abord créer une ligne. */}
         <div className='row'>
-          {/* col-12 : Mobil telefonlar için tam ekran genişliğinde olması demektir.  */}
-          {/* col-lg-10: Laptop ve daha geniş ekranlar için 10 kolon genişliğinde olması demektir. */}
-          {/* offset-lg-1 : Kolonu 1 kolon genişliğinde kaydır. Kolonu ortalamak için kullanırız. */}
+          {/* col-12 : en mode mobile que la largeur de l'affichage doit occupé l'intégralité de l'écran.  */}
+          {/* col-lg-10: pour les Laptop et plus grand écran la largeur de la colonne doit correspondre à 10. */}
+          {/* offset-lg-1 : bascule la largeur à 1 colonne et pour centrage de celle-ci */}
           <div className='col-12 col-lg-10 offset-lg-1'>
             {/* className="accordion" bootstrap tarafından tanımlanan css classıdır. */}
             <div className="accordion" id="accordionExample">
