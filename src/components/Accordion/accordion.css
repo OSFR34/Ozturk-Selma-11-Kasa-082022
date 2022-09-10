@@ -27,19 +27,18 @@
     background-repeat: no-repeat;
 }
 .accordion-button:not(.collapsed)::after {
-    /* burada da aynı ok resmi kullanılıyor. Ancak bootstrap accordiona tıklandığından oku 180 derece rotate yapar. */
+  
     background: url('../../images/arrowdown.png');
     background-size:contain;
     background-repeat: no-repeat;
   
   }
-/*  accordion collapsed olmadığında arka plan rengi ve text rengi değişmesin. */
-/* bootstrap'ta accordiona tıklandığında rengi değiştiği için rengin değişmemsi için rengini belirtiyoruz. */
+
 .accordion-button:not(.collapsed) {
     background-color: #ff6060;
     color:white;
 }
-/*  Bunlar da bootstrap in otomatik ayarlarını değiştirmek için  */
+
 .accordion-body{
     min-height:146px;
     padding:0;

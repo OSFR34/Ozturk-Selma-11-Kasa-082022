@@ -13,25 +13,23 @@ class Accordion extends Component {
           {/* col-lg-10: pour les Laptop et plus grand écran la largeur de la colonne doit correspondre à 10. */}
           {/* offset-lg-1 : bascule la largeur à 1 colonne et pour centrage de celle-ci */}
           <div className='col-12 col-lg-10 offset-lg-1'>
-            {/* className="accordion" bootstrap tarafından tanımlanan css classıdır. */}
             <div className="accordion" id="accordionExample">
-              {/* accordion-item bootstrap özelliğidir. */}
-              {/* accordion-item accordionun açılması veya kapanması gibi özellikleri ayarlayabiliriz. Ayrıca bootstrap tarafondan yaratılmış kendi css özellikleri vardır. Kendi margini paddingi bootstrap tarafından ayarlanmıştır. */}
+             
               <div className="accordion-item">
                 <h2 className="accordion-header" id="headingOne">
                   {/* button : accordionun açılıp kapanmasını sağlayan butondur. */}
-                  {/* collapsed: Bootstrap css classıdır. accordion kapalı demektir. */}
-                  {/* data-bs-toggle="collapse" accordionu açıp kapamaya yarayan bootstrap propertysidir.  */}
-                  {/* data-bs-target="#collapseOne", collapseOne idli accordionu aç demektir. */}
-                  {/* aria-controls="collapseOne" , buttonun hangi elementi kontrol edeceğini belirtir. Burada collapseOne idli elementi kontrol ediyoruz. */}
+                  {/* collapsed: signifie que l'accordeon est fermé */}
+                  {/* data-bs-toggle="collapse" gère l'ouverture et la fermeture de l'accordeon.  */}
+                  {/* data-bs-target="#collapseOne", collapseOne ouvre l'accordeon. */}
+                  {/* aria-controls="collapseOne" signifie quel element doit etre controler*/}
                   <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                     Fiabilité
                   </button>
                 </h2>
-                {/* accordion-collapse: accordiona tıkladığımızda görünecek olan alanın css özelliğidir. Bootstrap classıdır.  */}
-                {/* data-bs-parent="#accordionExample" accordiona tıkladığımızda görünecek alanın hangi parent alana bağlı olduğunu belirten css özelliğidir. */}
+                {/* accordion-collapse: precise ce qui doit etre vu au clic.*/}
+                {/* data-bs-parent="#accordionExample" au clic sue l'accordeon, précise quel est le parent qui est lié. */}
                 <div id="collapseOne" className="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                  {/* accordion-body : Bootstrap classıdır. Accordiona tıkladığında açılan alanın margin padding gibi özelliklerini ayarlar. */}
+                  {/* accordion-body :règle automatique les margins et les paddings . */}
                   <div className="accordion-body">
                     Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes.
                   </div>
