@@ -8,10 +8,10 @@ class Slider extends Component {
         return (
             // className=container permet l'alignement avec le logo
             <div className='container my-4'>
-                {/* Récupération des code carousel à partir du site web de bootstrap. */}
+                {/* Récupération des codes carousel à partir du site web de bootstrap. */}
                 <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="carousel">
                     <div className="carousel-inner">
-                        {/* carousel-item:signifie élément du carousel et active signifie qu'il faut l'affiché. */}
+                        {/*l'ajout d'active après "carousel-item" signifie qu'il faut l'affiché. */}
                         <div className="carousel-item active">
                             <img src={cardinfo.pictures[0]} className="d-block w-100 img-fluid" alt={cardinfo.title}  />
                             <div className="carousel-caption d-none d-md-block">
