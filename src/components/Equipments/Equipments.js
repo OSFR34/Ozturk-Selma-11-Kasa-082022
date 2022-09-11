@@ -12,7 +12,7 @@ class Equipments extends Component {
   }
   changeEquipmentsState = () => {
     this.setState({
-      // si equipmentsOn n'est pas false alors inverser son résultat booléen.
+      // si equipmentsOn n'est pas false alors inverser son résultat booléen, soit true.
       equipmentsOn:!this.state.equipmentsOn
     })
   }

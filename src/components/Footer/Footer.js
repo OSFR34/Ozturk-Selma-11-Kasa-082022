@@ -7,7 +7,7 @@ class Footer extends Component {
   render() {
     return (
       <div className='footer'>
-        {/* className = "img-fluid" resmin mobil cihazlarda veya ekranı küçülttüğümüzde çözünürlüğünün bozulmaması için kullanırız. */}
+        {/* className = "img-fluid" utilisation pour que la résolution de l'image ne se détériore pas sur les appareils mobiles ou lorsque nous réduisons l'écran.. */}
         <div className='footer-logo'>
           <NavLink to="/">
             <img src={footerlogo} className="img-fluid" alt='Kasa' />

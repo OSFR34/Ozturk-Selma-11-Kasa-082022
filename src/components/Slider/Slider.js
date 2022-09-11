@@ -3,22 +3,18 @@ import './slider.css';
 
 class Slider extends Component {
     render() {
-        //react da destructing metodu
-        // this.propstan cardinfo yu al demektir. Böylece this.props.cardinfo şeklinde kullanmak yerine daha kısa kelimeyle süslü parantez içinde cardinfo olarak çağırabiliriz. 
         // destructing prop method react
         const {cardinfo} = this.props;
         return (
-            // className= container seçince logo ile aynı hizaya geliyor. bu yüzden container bootstrap classNameını kullandık.
-            // className sadece css ayarlamak için kullanılır.
+            // className=container permet l'alignement avec le logo
             <div className='container my-4'>
-                {/* Bootstrap web adresinden carousel kodlarını kopyalayıp buraya yapıştırıyoruz. */}
+                {/* Récupération des code carousel à partir du site web de bootstrap. */}
                 <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="carousel">
                     <div className="carousel-inner">
-                        {/* Slider içindeki her bir resme carousel-item denir. Eğer carousel-item yanında active yazıyorsa o anda o resim gösteriliyor demektir. */}
+                        {/* carousel-item:signifie élément du carousel et active signifie qu'il faut l'affiché. */}
                         <div className="carousel-item active">
                             <img src={cardinfo.pictures[0]} className="d-block w-100 img-fluid" alt={cardinfo.title}  />
                             <div className="carousel-caption d-none d-md-block">
-                                {/* current-slide-text = texte de la diapositive actuelle demektir. */}
                                 <p className="current-slide-text">1 / {cardinfo.pictures.length}</p>
                             </div>
                         </div>
@@ -29,7 +25,7 @@ class Slider extends Component {
                                         <div key={index} className="carousel-item">
                                             <img src={picture} className="d-block w-100 img-fluid" alt={cardinfo.title} />
                                             <div className="carousel-caption d-none d-md-block">
-                                                {/* index 0'dan basşladığı için 1 artırmamız gerekir indexin değerini. */}
+                                                {/* comme l'index commence par 0 alors on ajoute +1. */}
                                             <p className="current-slide-text">{index + 1} / {cardinfo.pictures.length}</p>
                                             </div>
                                         </div>

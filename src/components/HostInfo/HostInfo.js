@@ -18,7 +18,7 @@ class HostInfo extends Component {
             </div>
         </div>
         <div className="star-rating">
-          {/* if döngüsüyle eğer rating 1 'e eşitse 1 tane dolu yıldız resmi ve 4 tane boş yıldız resmi yanyana koyduk. */}
+          {/* si le rating est égale 1 alors on place une étoile pleine et 4 étoiles vides, etc */}
             {
                 rating === "1" && <><img src={starfull} /><img src={starempty} /><img src={starempty} /><img src={starempty} /><img src={starempty} /></>
             }

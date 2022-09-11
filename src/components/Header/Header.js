@@ -5,7 +5,7 @@ import './header.css';
 class Header extends Component {
   render() {
     return (
-      // my-5 margin-y: y ekseninde margin verir.
+      // my-5 margin-y: Renvoie une marge sur l'axe des ordonnées.
       <div className='container my-4 header'>
         <div>
           <NavLink to="/">

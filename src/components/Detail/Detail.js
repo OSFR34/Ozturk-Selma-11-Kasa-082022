@@ -1,7 +1,7 @@
-// Normalde class component oluşturuyoruz ancak burada path 'den ilan id sini almak için rfc yazıp entera basıyoruz.
-//Yani functional component oluşturmamız gerekiyor.
+// création d'un composant fonction pour récupérer id à partir du "path"de l'annonce.
+
 import React from 'react'
-// Path'den ilanın idsini almak için useParams metodunu kullanıyoruz.
+// utilisation de la méthode useParams() pour récupérer du chemin 'Path'son id.
 import {useParams} from 'react-router-dom';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
@@ -17,13 +17,12 @@ function Detail() {
   return (
     <div>
         <Header/>
-          {/* map metodu javascript objeleri için iterasyon yapmayı sağlar. Her bir iterasyon öğesine card ismini verdik. */}
+          {/* map :permet l'itération à partir des objets */}
           {   
             ListCards.map((card,i) => {
               if(card.id === parameters.lodgingid){
                 return(
-                  // Slider componentine card bilgilerini yollamak için bir prop oluşturuyoruz. propun ismine istediğimiz ismi verebiliriz. Burda ismini cardinfo olarak belirledik. cardinfonun değeri de card değişkenine eşitledik. Böylece tıklanan ilanın bilgilerini slider componentine yolladık.
-                  // return içinde birden fazla component kullanmak istediğimizde aşağıdaki gibi "sarmalama(<>)" yapmamız gerekir.
+                
                   <div key={i}>
                     <Slider key={i} cardinfo={card} />
                     <div className='container my-4'>
